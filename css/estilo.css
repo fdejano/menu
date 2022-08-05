@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #c4c7ba;
+    --cor1: #0CDEFA;
+    --cor2: #3AB6C7;
+    --cor3: #099AAD;
+    --cor4: #497E85;
+    --cor5: #066D7A;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor3), var(--cor5));
+    min-height: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+ }
+
+ header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+    
+ }
+
+.menuLateral {
+    background-color: var(--cor4);
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: -300px;
+    transition: left 0.5s;
+}
+
+.menuLateral .titulo {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 24px;
+    border-bottom: 2px solid red;
+}
+
+.menuLateral ul {
+    list-style: none;
+}
+
+.menuLateral ul li {
+    line-height: 40px;
+    border-bottom: 1px solid white;
+}
+
+.menuLateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.menuLateral ul li a:hover {
+    background-color: var(--cor1);
+    transition: 0.5s;
+}
+
+.menuLateral ul ul li a {
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 60px;
+    background-color: rgba(128, 128, 128, 0.250);
+}
+
+.menuLateral ul ul {
+    display: none;
+}
+
+.menuLateral ul .itensNorte.mostrar {
+    display: block;
+}
+
+.menuLateral ul .itensNordeste.mostrar {
+    display: block;
+}
+
+.menuLateral ul .itensCentroOeste.mostrar {
+    display: block;
+}
+
+.menuLateral ul .itensSudeste.mostrar {
+    display: block;
+}
+
+.menuLateral ul .itensSul.mostrar {
+    display: block;
+}
+
+.menuLateral ul .itensBrasil.mostrar {
+    display: block;
+}
+
+.btnAbrir {
+    position: absolute;
+    top: 110px;
+    left: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnAbrir span {
+    font-size: 40px;
+}
+
+.menuLateral.mostrar {
+    left: 0;
+}
+
+.btnFechar {
+    position: relative;
+    left: 20px;
+    top: 3px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnFechar:hover {
+    border: 1px solid red;
+}
+
+.menuLateral.fechar {
+    left: -300px;
+}
+
+.menuLateral ul li a span {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    transition: 0.4s;
+}
+
+.menuLateral ul li a span.girar {
+    transform: rotate(90deg);
+}
+
+main iframe {
+    position: absolute;
+    top: 180px;
+    left: 700px;
+    padding: 10px;
+    background-color: var(--cor0);
+    border-radius: 5px;
+}

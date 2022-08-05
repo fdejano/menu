@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icones Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    
+
+    <title>Menu Lateral</title>
+</head>
+<body>
+    <header>
+        <h1>Estados Brasileiro de Norte ao Sul</h1>
+        <p>Mapa de todos os estados Brasileiros</p>
+    </header>
+    <div class="btnAbrir">
+        <span class="material-symbols-outlined">menu_open</span>
+    </div>
+    <nav class="menuLateral">
+        <div class="titulo">M E N U<span class="material-symbols-outlined btnFechar">close</span></div>
+        <ul>
+            <li><a href="#" class="norte">Norte<span class="material-symbols-outlined seta1">arrow_right</span></a>
+                <ul class="itensNorte">
+                    <li><a href="estados/acre.html" target="framePaginaPrincipal">Acre</a></li>
+                    <li><a href="estados/amapa.html" target="framePaginaPrincipal">Amapá</a></li>
+                    <li><a href="estados/amazonas.html" target="framePaginaPrincipal">Amazonas</a></li>
+                    <li><a href="estados/para.html" target="framePaginaPrincipal">Pará</a></li>
+                    <li><a href="estados/rondonia.html" target="framePaginaPrincipal">Rondônia</a></li>
+                    <li><a href="estados/roraima.html" target="framePaginaPrincipal">Roraima</a></li>
+                    <li><a href="estados/tocantins.html" target="framePaginaPrincipal">Tocantins</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nordeste">Nordeste<span class="material-symbols-outlined seta2">arrow_right</span></a>
+                <ul class="itensNordeste">
+                    <li><a href="estados/maranhao.html" target="framePaginaPrincipal">Maranhão</a></li>
+                    <li><a href="estados/piaui.html" target="framePaginaPrincipal">Piauí</a></li>
+                    <li><a href="estados/ceara.html" target="framePaginaPrincipal">Ceará</a></li>
+                    <li><a href="estados/riograndedonorte.html" target="framePaginaPrincipal">Rio Grande do Norte</a></li>
+                    <li><a href="estados/paraiba.html" target="framePaginaPrincipal">Paraíba</a></li>
+                    <li><a href="estados/pernambuco.html" target="framePaginaPrincipal">Pernambuco</a></li>
+                    <li><a href="estados/alagoas.html" target="framePaginaPrincipal">Alagoas</a></li>
+                    <li><a href="estados/sergipe.html" target="framePaginaPrincipal">Sergipe</a></li>
+                    <li><a href="estados/bahia.html" target="framePaginaPrincipal">Bahia</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="centroOeste">Centro-Oeste<span class="material-symbols-outlined seta3">arrow_right</span></a>
+                <ul class="itensCentroOeste">
+                    <li><a href="estados/distritofederal.html" target="framePaginaPrincipal">Distrito Federal</a></li>
+                    <li><a href="estados/goias.html" target="framePaginaPrincipal">Goiás</a></li>
+                    <li><a href="estados/matogrosso.html" target="framePaginaPrincipal">Mato Grosso</a></li>
+                    <li><a href="estados/matogrossodosul.html" target="framePaginaPrincipal">Mato Grosso do Sul</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="sudeste">Sudeste<span class="material-symbols-outlined seta4">arrow_right</span></a>
+                <ul class="itensSudeste">
+                    <li><a href="estados/espiritosanto.html" target="framePaginaPrincipal">Espírito Santo</a></li>
+                    <li><a href="estados/minasgerais.html" target="framePaginaPrincipal">Minas Gerais</a></li>
+                    <li><a href="estados/riodejaneiro.html" target="framePaginaPrincipal">Rio de Janeiro</a></li>
+                    <li><a href="estados/saopaulo.html" target="framePaginaPrincipal">São Paulo</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="sul">Sul<span class="material-symbols-outlined seta5">arrow_right</span></a>
+                <ul class="itensSul">
+                    <li><a href="estados/parana.html" target="framePaginaPrincipal">Paraná</a></li>
+                    <li><a href="estados/santacatarina.html" target="framePaginaPrincipal">Santa Catarina</a></li>
+                    <li><a href="estados/riograndedosul.html" target="framePaginaPrincipal">Rio Grande do Sul</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="brasil">Brasil<span class="material-symbols-outlined seta6">arrow_right</span></a>
+                <ul class="itensBrasil">
+                    <li><a href="estados/brasil.html" target="framePaginaPrincipal">Mapa Brasil</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <iframe id="framePage" frameborder="0" width="900" height="750" name="framePaginaPrincipal"></iframe>
+    </main>
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
